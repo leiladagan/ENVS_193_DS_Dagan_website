@@ -1,10 +1,14 @@
 ---
-title: "ENVS_193_DS_Dagan_website"
+title: "Leila Dagan"
 ---
 
-This is a Quarto website.
+This is where the blurb introducing myself will go.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Education:
+
+Work Experience:
+
+Etc.
 
 ```{r}
 1 + 1
