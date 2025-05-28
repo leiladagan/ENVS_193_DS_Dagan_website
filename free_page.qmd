@@ -1,5 +1,10 @@
 ---
-title: "free_page"
+title: "Free page"
 format: html
 ---
 
+-   could be about anything (hobbies, interests, etc.)
+
+-   must be organized with section headers
+
+-   must have photos or visuals of some kind

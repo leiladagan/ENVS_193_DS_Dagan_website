@@ -5,12 +5,14 @@ about:
   image: dagan_profile.jpg
 ---
 
-## About me 
+## About me
 
-### Education: University of California, Santa Barbara 
+### Education: University of California, Santa Barbara
 
 Major: Environmental Studies, B.S. \| Minor: Earth Science \| GPA: 3.88
 
 ### Current Positions:
 
-fill out later with current jobs positions
+Student Worker \| Cheadle Center For Biodiversity and Ecological Restoration
+
+Proctor \| UCSB Disabled Students Program

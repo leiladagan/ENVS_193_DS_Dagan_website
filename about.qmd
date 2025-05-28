@@ -2,8 +2,12 @@
 title: "More About Me"
 ---
 
-About this site
+### Section 1: Why Environmental Studies is my Passion 
 
-```{r}
-1 + 1
-```
+(include photos)
+
+### Section 2: Student Worker for CCBER 
+
+(include a photo)
+
+### Section 3: Proctor For Disabled Student's Program 

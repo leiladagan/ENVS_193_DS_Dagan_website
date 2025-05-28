@@ -4,20 +4,41 @@
     "href": "about.html",
     "title": "More About Me",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "Section 1: Why Environmental Studies is my Passion\n(include photos)\n\n\nSection 2: Student Worker for CCBER\n(include a photo)\n\n\nSection 3: Proctor For Disabled Student’s Program"
+  },
+  {
+    "objectID": "project_page.html",
+    "href": "project_page.html",
+    "title": "Project",
+    "section": "",
+    "text": "at least one post with code, its output, and writing about what you’re doing and why\nat least one post with project or paper description (from a job, research project, class)"
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "resume",
+    "section": "",
+    "text": "(include pdf of my updated resume)"
+  },
+  {
+    "objectID": "free_page.html",
+    "href": "free_page.html",
+    "title": "Free page",
+    "section": "",
+    "text": "could be about anything (hobbies, interests, etc.)\nmust be organized with section headers\nmust have photos or visuals of some kind"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Leila Dagan",
     "section": "",
-    "text": "Major: Environmental Studies, B.S. | Minor: Earth Science | GPA: 3.88\n\n\n\nfill out later with current jobs positions"
+    "text": "Major: Environmental Studies, B.S. | Minor: Earth Science | GPA: 3.88\n\n\n\nStudent Worker | Cheadle Center For Biodiversity and Ecological Restoration\nProctor | UCSB Disabled Students Program"
   },
   {
     "objectID": "index.html#about-me",
     "href": "index.html#about-me",
     "title": "Leila Dagan",
     "section": "",
-    "text": "Major: Environmental Studies, B.S. | Minor: Earth Science | GPA: 3.88\n\n\n\nfill out later with current jobs positions"
+    "text": "Major: Environmental Studies, B.S. | Minor: Earth Science | GPA: 3.88\n\n\n\nStudent Worker | Cheadle Center For Biodiversity and Ecological Restoration\nProctor | UCSB Disabled Students Program"
   }
 ]
