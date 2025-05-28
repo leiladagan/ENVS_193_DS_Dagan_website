@@ -1,5 +1,5 @@
 ---
-title: "Finley Malloc"
+title: "Leila Dagan "
 about:
   template: trestles
   image: dagan_profile.jpg
@@ -7,12 +7,10 @@ about:
 
 ## About me 
 
-Education:
+### Education: University of California, Santa Barbara 
 
-Work Experience:
+Major: Environmental Studies, B.S. \| Minor: Earth Science \| GPA: 3.88
 
-Etc.
+### Current Positions:
 
-```{r}
-1 + 1
-```
+fill out later with current jobs positions

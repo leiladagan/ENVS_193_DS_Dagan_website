@@ -15,9 +15,8 @@ website:
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    theme: solar
+    font-family: Georgia, serif;
     css: styles.css
     toc: true
 
