@@ -1,8 +1,11 @@
 ---
-title: "Leila Dagan"
+title: "Finley Malloc"
+about:
+  template: trestles
+  image: dagan_profile.jpg
 ---
 
-This is where the blurb introducing myself will go.
+## About me 
 
 Education:
 
