@@ -3,12 +3,15 @@ project:
   output-dir: docs
 
 website:
-  title: "ENVS_193_DS_Dagan_website"
+  title: "Leila Dagan Website"
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
+      - project_page.qmd
+      - free_page.qmd
+      - resume.qmd
 
 format:
   html:
