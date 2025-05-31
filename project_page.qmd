@@ -294,20 +294,7 @@ model7 <- lm(total_g ~ species_name,
              data = drought_exp_clean)
 ```
 
-Model diagnostics
-
-```{r model-diagnostics}
-par(mfrow = c(2,2))
-plot(model1)
-plot(model2)
-plot(model3)
-plot(model4) # residuals look ok for best model
-plot(model5)
-plot(model6)
-plot(model7)
-```
-
-Model selection
+Model selection 
 
 ```{r model-selection}
 AICc(model1,
@@ -318,9 +305,17 @@ AICc(model1,
      model6,
      model7,
      model0) |> 
-  # arranging output in descending order of AIC
+  # arranging output in descending order of AIC, model with lowest number is the best. 
   arrange(AICc)
 ```
+
+```{r model-diagnostics}
+par(mfrow = c(2,2))
+plot(model4) # residuals look ok for best model. If not, would plot model 1, then 3, etc. 
+```
+
+Model selection
+
 
 Look at the model summary:
 
