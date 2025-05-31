@@ -10,6 +10,8 @@ execute:
 I am a student worker for the Cheadle Center for Biodiversity and Ecological Restoration. In this, we remove invasive plants using different techniques, such as solarization, manual removal, controlled burns, and careful use of grass specific herbicide. We also collect seeds from local native plants in order to spread to other areas around campus and increase the local plant biodiversity. 
 I have learned a lot about the different native plants in the Isla Vista area, as well as useful land management strategies. 
 
+## Interactive Map showing Restoration sites and Rest areas 
+
 {=html}
 <iframe 
   width="100%" 
@@ -26,7 +28,8 @@ I have learned a lot about the different native plants in the Isla Vista area, a
 
 # Analysis of sample restoration data 
 
-I am currently taking an Environmental Data Science class. In workshop, we worked with [this data](https://doi.org/10.5061/dryad.v0861f7) to answer this question: How do specific leaf area, water treatment, and species influence plant mass? Results of this question can better inform restoration plans. 
+I am currently taking an Environmental Data Science class with An Bui. In workshop, we worked with [this data](https://doi.org/10.5061/dryad.v0861f7) to answer this question: How do specific leaf area, water treatment, and species influence plant mass? Results of this question can better inform restoration plans. 
+Below is the completed workshop assignment, including code from r and it's output. 
 
 **Specific leaf area** is a continuous variable measured in cm^2^/g.  
 
@@ -394,3 +397,5 @@ ggplot(data = drought_exp_clean,
 ```
 
 Data source: Valliere, Justin; Zhang, Jacqueline; Sharifi, M.; Rundel, Philip (2019). Data from: Can we condition native plants to increase drought tolerance and improve restoration success? [Dataset]. Dryad. [https://doi.org/10.5061/dryad.v0861f7](https://doi.org/10.5061/dryad.v0861f7)  
+
+Code: An Bui created the template for this workshop, and Thuy-Tien Bui walked us through each step in class. 
