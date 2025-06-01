@@ -8,7 +8,7 @@ listing:
 lightbox: true
 ---
 
-\![\](/Users/UCSB/Downloads/Spring-25/ES193-DS/dagan-github/ENVS_193_DS_Dagan_website/bioma/bioma_pics/bucket.png)
+![](bioma/bioma_pics/turtlebucket.jpg){group="my-gallery"}
 
 One of the highlights of my UCSB experience so far was the BIOMA internship class. We spent two weeks in the Pacuare Nature Reserve in Costa Rica, which is one of the most important nesting sites for the Leatherback Sea Turtle, *Dermochelys coriacea*.
 

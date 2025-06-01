@@ -41,6 +41,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-a389595bbda453fb7ef91693894fe34f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -204,7 +207,7 @@ window.Quarto = {
 </header>
 
 
-<p>![](/Users/UCSB/Downloads/Spring-25/ES193-DS/dagan-github/ENVS_193_DS_Dagan_website/bioma/bioma_pics/bucket.png)</p>
+<p><a href="bioma/bioma_pics/turtlebucket.jpg" class="lightbox" data-gallery="my-gallery"><img src="bioma/bioma_pics/turtlebucket.jpg" class="img-fluid"></a></p>
 <p>One of the highlights of my UCSB experience so far was the BIOMA internship class. We spent two weeks in the Pacuare Nature Reserve in Costa Rica, which is one of the most important nesting sites for the Leatherback Sea Turtle, <em>Dermochelys coriacea</em>.</p>
 <p>Once we returned to UCSB, I worked with Professor Wagner Qurios to create a paper and presentation about the ethics behind the conservation techniques used at the Pacuare Nature Reserve.</p>
 
@@ -690,6 +693,38 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
