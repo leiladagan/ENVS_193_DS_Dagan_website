@@ -2,12 +2,42 @@
 title: "More About Me"
 ---
 
-### Section 1: Why Environmental Studies is my Passion 
+### Where I'm From 
 
-(include photos)
+I was born on Maui, Hawaii and I lived there until I was five. Then, I grew up in a small town called Brookdale nestled in the Santa Cruz mountains! I was lucky enough to live in two places with spectacular nature. My upbringing definitely fostered a love and respect for the environment, inspiring me to get my degree in environmental studies.
 
-### Section 2: Student Worker for CCBER 
+#### Maui 
 
-(include a photo)
+::: {.columns}
+::: {.column width="50%"}
+![](me&dad.JPG)  
+:::
 
-### Section 3: Proctor For Disabled Student's Program 
+::: {.column width="50%"}
+![](bridge.png)  
+:::
+:::
+
+#### Brookdale 
+::: {.columns}
+::: {.column width="50%"}
+![](rainbow.jpeg)  
+:::
+
+::: {.column width="50%"}
+![](mushroomlog.png)  
+:::
+:::
+### My Current Favorite Plant and Animal 
+
+I am currently obsessed with redwood trees, and baby deer! 
+
+<video width="400" controls>
+  <source src="deer.mov" type="video/mp4">
+</video>
+
+### My Current Favorite Book 
+
+I recently read *Sharks in the time of Saviors* by Kawai Strong Washburn, and would love to chat about it with anyone willing to listen!
+
+<img src="book.png" width="300">
