@@ -1,0 +1,11 @@
+---
+title: "Paper"
+description: "The Ethics Behind the Conservation Techniques at the Pacuare Nature Reserve"
+image: project_images/henleygate1.png
+categories: 
+- internship 
+---
+
+<iframe src="bioma/192_paper.pdf" width="100%" height="600px" style="border: none;">
+    This browser does not support PDFs. Please download the PDF to view it: <a href="bioma/192_paper.pdf">Download PDF</a>.
+</iframe>
