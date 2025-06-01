@@ -3,6 +3,6 @@ title: "resume"
 format: html
 ---
 
-Here is my resume!
+![](resume1.png)
 
-\![\](dagan_resume.pdf)
+![](resume2.png)
