@@ -8,14 +8,10 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: about.qmd
-        text: More about Me 
-      - href: restoration_rest.qmd
-        text: Restoration and Rest areas at UCSB
-      - href: free_page.qmd
-        text: BIOMA Fieldwork
-      - href: resume.qmd
-        text: resume 
+      - about.qmd
+      - restoration_rest.qmd
+      - free_page.qmd
+      - resume.qmd
 
 format:
   html:
