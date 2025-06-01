@@ -6,62 +6,67 @@ execute:
   warning: false # use this to make sure warnings don't show up
 ---
 
-# CCBER 
-I am a student worker for the Cheadle Center for Biodiversity and Ecological Restoration. In this, we remove invasive plants using different techniques, such as solarization, manual removal, controlled burns, and careful use of grass specific herbicide. We also collect seeds from local native plants in order to spread to other areas around campus and increase the local plant biodiversity. 
-I have learned a lot about the different native plants in the Isla Vista area, as well as useful land management strategies. 
+# CCBER
 
-## Interactive Map showing Restoration sites and Rest areas 
+I am a student worker for the Cheadle Center for Biodiversity and Ecological Restoration. In this, we remove invasive plants using different techniques, such as solarization, manual removal, controlled burns, and careful use of grass specific herbicide. We also collect seeds from local native plants in order to spread to other areas around campus and increase the local plant biodiversity. I have learned a lot about the different native plants in the Isla Vista area, as well as useful land management strategies.
 
-{=html}
-<iframe 
+## Interactive Map showing Restoration sites and Rest areas
+
+{=html} <iframe 
   width="100%" 
   height="600" 
   frameborder="0" 
   scrolling="no" 
   allowfullscreen 
-  src="https://ucsb.maps.arcgis.com/apps/instant/basic/index.html?webmap=caf9f14297664734bc232aa3dc1a769f">
-</iframe>
+  src="https://ucsb.maps.arcgis.com/apps/instant/basic/index.html?webmap=caf9f14297664734bc232aa3dc1a769f"> </iframe>
 
-### Flowers: Sites I work at with CCBER 
-#### From Left to Right: 
+### Flowers: Sites I work at with CCBER
 
-##### Ellwood Marine Terminal: 
+#### From Left to Right:
 
-This is where I park to work at the Ellwood Marine Terminal! This is one of the newer sites, where we are planting for the butterfly grove as well as plants that will act as filtration for the riparian zone nearby. 
+##### Ellwood Marine Terminal:
 
-##### Lagoon Island: 
+This is where I park to work at the Ellwood Marine Terminal! This is one of the newer sites, where we are planting for the butterfly grove as well as plants that will act as filtration for the riparian zone nearby.
+
+##### Lagoon Island:
+
 This is where most of my work takes place, as my boss is the Lagoon steward. Here, we are mostly removing invasive species.
 
-<img src="lupine&poppy.png" width="300">
+![](lupine&poppy.png){width="300"}
 
-##### Burn Plot: 
-This site was burned in the Summer of 2024, right before I started working for CCBER. It was burned with the intent to heat and kill the invasive grasses and their seeds, and to test out different treatments for restoration. Over the course of this school year, we have monitored how the different subplots (high native seeding, low seed, no seed) are blooming after the burn, as well as the recovery of shrubs that survived the burn. There is a control plot a thatch-removed plot, and a grass-specific herbicide plot nearby that are monitored simultaneously. We also remove any invasive plants that popped up after the burn. 
+##### Burn Plot:
 
-<img src="redmaids&poppy.png" width="300">
+This site was burned in the Summer of 2024, right before I started working for CCBER. It was burned with the intent to heat and kill the invasive grasses and their seeds, and to test out different treatments for restoration. Over the course of this school year, we have monitored how the different subplots (high native seeding, low seed, no seed) are blooming after the burn, as well as the recovery of shrubs that survived the burn. There is a control plot a thatch-removed plot, and a grass-specific herbicide plot nearby that are monitored simultaneously. We also remove any invasive plants that popped up after the burn.
 
-##### Campus Point: 
-This was the first site I worked on with CCBER, so it's near and dear to my heart. Lots of planting and weeding! 
+<img src="redmaids&amp;poppy.png" width="300"/>
 
-##### Henley Gate: 
-This project has a lot of sky and bush lupines, which have become my favorite flowers! Also lots of planting, weeding, and seed collecting. 
+##### Campus Point:
 
-::: {.columns}
+This was the first site I worked on with CCBER, so it's near and dear to my heart. Lots of planting and weeding!
+
+##### Henley Gate:
+
+This project has a lot of sky and bush lupines, which have become my favorite flowers! Also lots of planting, weeding, and seed collecting.
+
+::::: columns
 ::: {.column width="50%"}
 ![](henleygate1.png)
 :::
+
 ::: {.column width="50%"}
 ![](lupine.png)
 :::
-:::
+:::::
 
-### Stars: Some of my favorite rest spots on/around campus 
+### Stars: Some of my favorite rest spots on/around campus
 
-#### From Left to Right: 
+#### From Left to Right:
 
-##### Deverux: 
-An amazing spot to tidepool and surf! I didn't know about this place until my second year at UCSB, but now I can't get enough! 
+##### Deverux:
 
-::: {.columns}
+An amazing spot to tidepool and surf! I didn't know about this place until my second year at UCSB, but now I can't get enough!
+
+::::: columns
 ::: {.column width="50%"}
 ![](devs_penguin.png)
 :::
@@ -69,42 +74,43 @@ An amazing spot to tidepool and surf! I didn't know about this place until my se
 ::: {.column width="50%"}
 ![](lei&nat.png)
 :::
-:::
+:::::
 
+##### Del Playa Park
 
-##### Del Playa Park 
-This grassy park is a lovely place to tan, do homework outside, and people watch. 
+This grassy park is a lovely place to tan, do homework outside, and people watch.
 
-##### Window to the Sea Park 
-Another lovely grassy area to hang out in Isla Vista, I usually stop here on my walk to Dev's. 
+##### Window to the Sea Park
+
+Another lovely grassy area to hang out in Isla Vista, I usually stop here on my walk to Dev's.
 
 ##### Campus point (again)
-Where I fell in love with surfing my freshman year. I was able to see bioluminescence here and I have never felt more like a mermaid. 
-{{< video campus_point.mov >}}. 
 
-##### Bren Hall deck 
-The best place to study! A beautiful outdoor ocean view deck. 
+Where I fell in love with surfing my freshman year. I was able to see bioluminescence here and I have never felt more like a mermaid. {{< video campus_point.mov >}}.
 
-# Analysis of sample restoration data 
+##### Bren Hall deck
 
-I am currently taking an Environmental Data Science class with An Bui. In workshop, we worked with [this data](https://doi.org/10.5061/dryad.v0861f7) to answer this question: How do specific leaf area, water treatment, and species influence plant mass? Results of this question can better inform restoration plans. 
-Below is the completed workshop assignment, including code from r and it's output. 
+The best place to study! A beautiful outdoor ocean view deck.
 
-**Specific leaf area** is a continuous variable measured in cm^2^/g.  
+# Analysis of sample restoration data
 
-**Water treatment** is a categorical variable (i.e. a *factor*) with 2 levels: drought stressed (DS) and well watered (WW).  
+I am currently taking an Environmental Data Science class with An Bui. In workshop, we worked with [this data](https://doi.org/10.5061/dryad.v0861f7) to answer this question: How do specific leaf area, water treatment, and species influence plant mass? Results of this question can better inform restoration plans. Below is the completed workshop assignment, including code from r and it's output.
 
-**Species** is a categorical variable (again, a *factor*) with 6 levels.  
+**Specific leaf area** is a continuous variable measured in cm^2^/g.
+
+**Water treatment** is a categorical variable (i.e. a *factor*) with 2 levels: drought stressed (DS) and well watered (WW).
+
+**Species** is a categorical variable (again, a *factor*) with 6 levels.
 
 | Species name                 | Species code | Common name        |
 |------------------------------|--------------|--------------------|
-| _Encelia californica_        | ENCCAL       | Bush sunflower     |  
-| _Eschsholzia californica_    | ESCCAL       | California poppy   | 
-| _Penstemon centranthifolius_ | PENCEN       | Scarlet bugler     | 
-| _Grindelia camporums_        | GRINCAM      | Gumweed            | 
-| _Salvia leucophylla_         | SALLEU       | Purple sage        | 
-| _Stipa pulchra_              | STIPUL       | Purple needlegrass | 
-| _Lotus scoparius_            | LOTSCO       | Deerweed           |
+| *Encelia californica*        | ENCCAL       | Bush sunflower     |
+| *Eschsholzia californica*    | ESCCAL       | California poppy   |
+| *Penstemon centranthifolius* | PENCEN       | Scarlet bugler     |
+| *Grindelia camporums*        | GRINCAM      | Gumweed            |
+| *Salvia leucophylla*         | SALLEU       | Purple sage        |
+| *Stipa pulchra*              | STIPUL       | Purple needlegrass |
+| *Lotus scoparius*            | LOTSCO       | Deerweed           |
 
 ### 1. Setting up R
 
@@ -143,7 +149,6 @@ ww_col <- "#045CB4"
 # storing a ggplot theme (that will be used for all ggplots)
 theme_set(theme_bw())
 ```
-
 
 ### 2. Cleaning the raw data
 
@@ -203,10 +208,9 @@ slice_sample(
 )
 ```
 
-
 ### 3. Visualizing data
 
-This code hopes to answer the question, what is the relationship between SLA and total mass?  
+This code hopes to answer the question, what is the relationship between SLA and total mass?
 
 ```{r sla}
 #| fig-width: 10
@@ -296,16 +300,16 @@ ggplot(data = drought_exp_clean,
 
 8 models total:
 
-| Model number | SLA | Water treatment | Species | Predictor list              |  
-|:------------:|:---:|:---------------:|:-------:|-----------------------------|  
-| 0            |     |                 |         | no predictors (null model)  |
-| 1            |  X  |       X         |    X    | all predictors (full model) | 
-| 2            |  X  |       X         |         | SLA and water treatment     |   
-| 3            |  X  |                 |    X    | SLA and species             |    
-| 4            |     |       X         |    X    | water treatment and species |    
-| 5            |  X  |                 |         | SLA                         |    
-| 6            |     |       X         |         | water treatment             |    
-| 7            |     |                 |    X    | species                     |
+| Model number | SLA | Water treatment | Species | Predictor list              |
+|:------------:|:---:|:---------------:|:-------:|-----------------------------|
+|      0       |     |                 |         | no predictors (null model)  |
+|      1       |  X  |        X        |    X    | all predictors (full model) |
+|      2       |  X  |        X        |         | SLA and water treatment     |
+|      3       |  X  |                 |    X    | SLA and species             |
+|      4       |     |        X        |    X    | water treatment and species |
+|      5       |  X  |                 |         | SLA                         |
+|      6       |     |        X        |         | water treatment             |
+|      7       |     |                 |    X    | species                     |
 
 Model fitting
 
@@ -353,7 +357,7 @@ model7 <- lm(total_g ~ species_name,
              data = drought_exp_clean)
 ```
 
-Model selection 
+Model selection
 
 ```{r model-selection}
 AICc(model1,
@@ -375,7 +379,6 @@ plot(model4) # residuals look ok for best model. If not, would plot model 1, the
 
 Model selection
 
-
 Look at the model summary:
 
 ```{r model-summary}
@@ -386,7 +389,7 @@ summary(model4)
 
 **What is the best model?**
 
-The best model that predicts total plant mass (g) includes water treatment and species (F(7, 62) = 27.08, p < 0.001, $\alpha$ = 0.05), but not SLA.  
+The best model that predicts total plant mass (g) includes water treatment and species (F(7, 62) = 27.08, p \< 0.001, $\alpha$ = 0.05), but not SLA.
 
 **How much variation in the response (total mass, in grams) does this model explain?**
 
@@ -394,9 +397,9 @@ This model explained 73% (adjusted R^2^) of the variation in total mass.
 
 **How do we interpret the effects of the predictors on the response variable (again, total mass in grams)?**
 
-On average, plant masses in drought stressed conditions were 0.12 $\pm$ 0.04 g less than plant masses in well watered conditions across species.  
+On average, plant masses in drought stressed conditions were 0.12 $\pm$ 0.04 g less than plant masses in well watered conditions across species.
 
-Across water treatments, all species have different (and higher) masses than _Lotus scoparius_ except _Penstemon centranthifolius_.
+Across water treatments, all species have different (and higher) masses than *Lotus scoparius* except *Penstemon centranthifolius*.
 
 ### 5. Model predictions
 
@@ -410,7 +413,6 @@ model4_predictions <- ggpredict(
   rename(species_name = x,
          water_treatment = group)
 ```
-
 
 ### 6. Final figure
 
@@ -450,6 +452,6 @@ ggplot(data = drought_exp_clean,
   theme(legend.position = "none")
 ```
 
-Data source: Valliere, Justin; Zhang, Jacqueline; Sharifi, M.; Rundel, Philip (2019). Data from: Can we condition native plants to increase drought tolerance and improve restoration success? [Dataset]. Dryad. [https://doi.org/10.5061/dryad.v0861f7](https://doi.org/10.5061/dryad.v0861f7)  
+Data source: Valliere, Justin; Zhang, Jacqueline; Sharifi, M.; Rundel, Philip (2019). Data from: Can we condition native plants to increase drought tolerance and improve restoration success? \[Dataset\]. Dryad. <https://doi.org/10.5061/dryad.v0861f7>
 
-Code: An Bui created the template for this workshop, and Thuy-Tien Bui walked us through each step in class. 
+Code: An Bui created the template for this workshop, and Thuy-Tien Bui walked us through each step in class.

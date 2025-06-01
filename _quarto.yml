@@ -3,21 +3,27 @@ project:
   output-dir: docs
 
 website:
-  title: "Leila Dagan Website"
+  title: "Leila Dagan"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
-      - project_page.qmd
-      - free_page.qmd
-      - resume.qmd
+      - href: about.qmd
+        text: More about Me 
+      - href: restoration_rest.qmd
+        text: Restoration and Rest areas at UCSB
+      - href: free_page.qmd
+        text: BIOMA Fieldwork
+      - href: resume.qmd
+        text: resume 
 
 format:
   html:
     theme: solar
     css: styles.css
     toc: true
+    mainfont: IBM Plex Serif
+    page-layout: full
 
 editor: visual
 

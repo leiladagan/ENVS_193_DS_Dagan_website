@@ -3,6 +3,11 @@ title: "Leila Dagan "
 about:
   template: trestles
   image: dagan_profile.jpg
+  links:
+    - text: GitHub
+      href: https://github.com/leiladagan
+    - text: Email
+      href: mailto:leiladagan@ucsb.edu
 ---
 
 ## About me
