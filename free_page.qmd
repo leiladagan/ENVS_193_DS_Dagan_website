@@ -3,8 +3,4 @@ title: "BIOMA Fieldwork"
 format: html
 ---
 
--   could be about anything (hobbies, interests, etc.)
-
--   must be organized with section headers
-
--   must have photos or visuals of some kind
+# Summer Fieldwork at the Pacuare Nature Reserve 
