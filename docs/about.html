@@ -39,6 +39,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-a389595bbda453fb7ef91693894fe34f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -102,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./free_page.html"> 
-<span class="menu-text">BIOMA Fieldwork</span></a>
+<span class="menu-text">BIOMA fieldwork experience</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./resume.html"> 
@@ -159,9 +162,9 @@ ul.task-list li input[type="checkbox"] {
 <h4 class="anchored" data-anchor-id="maui">Maui</h4>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><img src="images/me&amp;dad.JPG" class="img-fluid"></p>
+<p><a href="images/me&amp;dad.JPG" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/me&amp;dad.JPG" class="img-fluid"></a></p>
 </div><div class="column" style="width:50%;">
-<p><img src="images/bridge.png" class="img-fluid"></p>
+<p><a href="images/bridge.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/bridge.png" class="img-fluid"></a></p>
 </div>
 </div>
 </section>
@@ -169,9 +172,9 @@ ul.task-list li input[type="checkbox"] {
 <h4 class="anchored" data-anchor-id="brookdale">Brookdale</h4>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><img src="images/rainbow.jpeg" class="img-fluid"></p>
+<p><a href="images/rainbow.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/rainbow.jpeg" class="img-fluid"></a></p>
 </div><div class="column" style="width:50%;">
-<p><img src="images/mushroomlog.png" class="img-fluid"></p>
+<p><a href="images/mushroomlog.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/mushroomlog.png" class="img-fluid"></a></p>
 </div>
 </div>
 </section>
@@ -186,7 +189,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="my-current-favorite-book" class="level3">
 <h3 class="anchored" data-anchor-id="my-current-favorite-book">My Current Favorite Book</h3>
 <p>I recently read <em>Sharks in the time of Saviors</em> by Kawai Strong Washburn, and would love to chat about it with anyone willing to listen!</p>
-<p><img src="images/book.png" class="img-fluid"></p>
+<p><a href="images/book.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="images/book.png" class="img-fluid"></a></p>
 
 
 </section>
@@ -610,6 +613,38 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

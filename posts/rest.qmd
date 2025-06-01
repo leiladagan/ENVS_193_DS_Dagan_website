@@ -4,13 +4,14 @@ description: "My favorite spots on/around campus"
 image: rest_images/tidepools.png
 categories: 
 - rest areas 
+lightbox: true
 ---
 
 # Devereux:
 
 An amazing spot to tidepool and surf! I didn't know about this place until my second year at UCSB, but now I can't get enough!
 
-::: {.columns}
+::::: columns
 ::: {.column width="50%"}
 ![](rest_images/devs_penguin.png)
 :::
@@ -18,8 +19,7 @@ An amazing spot to tidepool and surf! I didn't know about this place until my se
 ::: {.column width="50%"}
 ![](rest_images/lei&nat.png)
 :::
-:::
-
+:::::
 
 # Del Playa Park
 
@@ -31,10 +31,11 @@ Another lovely grassy area to hang out in Isla Vista, I usually stop here on my 
 
 # Campus point (again)
 
-Where I fell in love with surfing my freshman year. I was able to see bioluminescence here and I have never felt more like a mermaid. 
-<div style="max-width: 400px; margin: auto;">
-  {{< video rest_images/campus_point.mov >}}
-</div>
+Where I fell in love with surfing my freshman year. I was able to see bioluminescence here and I have never felt more like a mermaid.
+
+::: {style="max-width: 400px; margin: auto;"}
+{{< video rest_images/campus_point.mov >}}
+:::
 
 # Bren Hall deck
 
