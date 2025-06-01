@@ -1,0 +1,41 @@
+---
+title: "Rest Areas"
+description: "My favorite spots on/around campus"
+image: rest_images/tidepools.png
+categories: 
+- rest areas 
+---
+
+# Devereux:
+
+An amazing spot to tidepool and surf! I didn't know about this place until my second year at UCSB, but now I can't get enough!
+
+::: {.columns}
+::: {.column width="50%"}
+![](rest_images/devs_penguin.png)
+:::
+
+::: {.column width="50%"}
+![](rest_images/lei&nat.png)
+:::
+:::
+
+
+# Del Playa Park
+
+This grassy park is a lovely place to tan, do homework outside, and people watch.
+
+# Window to the Sea Park
+
+Another lovely grassy area to hang out in Isla Vista, I usually stop here on my walk to Dev's.
+
+# Campus point (again)
+
+Where I fell in love with surfing my freshman year. I was able to see bioluminescence here and I have never felt more like a mermaid. 
+<div style="max-width: 400px; margin: auto;">
+  {{< video rest_images/campus_point.mov >}}
+</div>
+
+# Bren Hall deck
+
+The best place to study! A beautiful outdoor ocean view deck.
