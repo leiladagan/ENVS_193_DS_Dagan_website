@@ -2,7 +2,7 @@
 title: "Leila Dagan "
 about:
   template: trestles
-  image: dagan_profile.jpg
+  image: images/dagan_profile.jpg
   links:
     - text: GitHub
       href: https://github.com/leiladagan

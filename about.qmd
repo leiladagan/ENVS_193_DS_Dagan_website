@@ -10,11 +10,11 @@ I was born on Maui, Hawaii and I lived there until I was five. Then, I grew up i
 
 ::::: columns
 ::: {.column width="50%"}
-![](me&dad.JPG)
+![](images/me&dad.JPG)
 :::
 
 ::: {.column width="50%"}
-![](bridge.png)
+![](images/bridge.png)
 :::
 :::::
 
@@ -22,11 +22,11 @@ I was born on Maui, Hawaii and I lived there until I was five. Then, I grew up i
 
 ::::: columns
 ::: {.column width="50%"}
-![](rainbow.jpeg)
+![](images/rainbow.jpeg)
 :::
 
 ::: {.column width="50%"}
-![](mushroomlog.png)
+![](images/mushroomlog.png)
 :::
 :::::
 
@@ -36,7 +36,7 @@ I am currently obsessed with redwood trees, and baby deer!
 
 <video width="400" controls>
 
-<source src="deer.mov" type="video/mp4">
+<source src="images/deer.mov" type="video/mp4">
 
 </video>
 
@@ -44,4 +44,4 @@ I am currently obsessed with redwood trees, and baby deer!
 
 I recently read *Sharks in the time of Saviors* by Kawai Strong Washburn, and would love to chat about it with anyone willing to listen!
 
-<img src="book.png" width="300"/>
+![](images/book.png)
