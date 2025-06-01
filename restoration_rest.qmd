@@ -6,7 +6,7 @@ listing:
   sort: "date desc" # can also sort on more than one field
   categories: true # allows you to sort posts by assigned categories 
 ---
-# Map showing Restoration sites and Rest areas
+## Here is a map showing Restoration sites and Rest areas
 
 <iframe 
   width="100%" 
@@ -24,3 +24,5 @@ From left to right: Ellwood Marine Terminal, Lagoon Island, 2024 Burn Plot, Camp
 **stars** = favorite rest spots near UCSB 
 
 From left to right: Devereux, Del Playa Park, Window to the Sea Park, Campus Point, Bren Hall deck 
+
+## check out more information abour restoration or rest stops below

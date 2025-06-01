@@ -11,23 +11,23 @@ execute:
 
 **I am currently taking an Environmental Data Science class with An Bui. In workshop, we worked with [this data](https://doi.org/10.5061/dryad.v0861f7) to answer this question: How do specific leaf area, water treatment, and species influence plant mass? Results of this question can better inform restoration plans.**
 
-Below is the completed workshop assignment, including code from r and it's output. 
+Below is the completed workshop assignment, including code from r and it's output.
 
-**Specific leaf area** is a continuous variable measured in cm^2^/g.  
+**Specific leaf area** is a continuous variable measured in cm^2^/g.
 
-**Water treatment** is a categorical variable (i.e. a *factor*) with 2 levels: drought stressed (DS) and well watered (WW).  
+**Water treatment** is a categorical variable (i.e. a *factor*) with 2 levels: drought stressed (DS) and well watered (WW).
 
-**Species** is a categorical variable (again, a *factor*) with 6 levels.  
+**Species** is a categorical variable (again, a *factor*) with 6 levels.
 
 | Species name                 | Species code | Common name        |
 |------------------------------|--------------|--------------------|
-| _Encelia californica_        | ENCCAL       | Bush sunflower     |  
-| _Eschsholzia californica_    | ESCCAL       | California poppy   | 
-| _Penstemon centranthifolius_ | PENCEN       | Scarlet bugler     | 
-| _Grindelia camporums_        | GRINCAM      | Gumweed            | 
-| _Salvia leucophylla_         | SALLEU       | Purple sage        | 
-| _Stipa pulchra_              | STIPUL       | Purple needlegrass | 
-| _Lotus scoparius_            | LOTSCO       | Deerweed           |
+| *Encelia californica*        | ENCCAL       | Bush sunflower     |
+| *Eschsholzia californica*    | ESCCAL       | California poppy   |
+| *Penstemon centranthifolius* | PENCEN       | Scarlet bugler     |
+| *Grindelia camporums*        | GRINCAM      | Gumweed            |
+| *Salvia leucophylla*         | SALLEU       | Purple sage        |
+| *Stipa pulchra*              | STIPUL       | Purple needlegrass |
+| *Lotus scoparius*            | LOTSCO       | Deerweed           |
 
 ### 1. Setting up R
 
@@ -42,7 +42,7 @@ library(MuMIn)
 
 # read in data
 library(readxl)
-drought_exp <- read_excel("Valliere_etal_EcoApps_Data copy.xlsx")
+drought_exp <- read_excel("/Users/UCSB/Downloads/Spring-25/ES193-DS/dagan-github/ENVS_193_DS_Dagan_website/drought_exp.xlsx")
   # specifying which sheet you want to read in
   sheet = "First Harvest"
 ```
@@ -66,7 +66,6 @@ ww_col <- "#045CB4"
 # storing a ggplot theme (that will be used for all ggplots)
 theme_set(theme_bw())
 ```
-
 
 ### 2. Cleaning the raw data
 
@@ -126,10 +125,9 @@ slice_sample(
 )
 ```
 
-
 ### 3. Visualizing data
 
-This code hopes to answer the question, what is the relationship between SLA and total mass?  
+This code hopes to answer the question, what is the relationship between SLA and total mass?
 
 ```{r sla}
 #| fig-width: 10
@@ -219,16 +217,16 @@ ggplot(data = drought_exp_clean,
 
 8 models total:
 
-| Model number | SLA | Water treatment | Species | Predictor list              |  
-|:------------:|:---:|:---------------:|:-------:|-----------------------------|  
-| 0            |     |                 |         | no predictors (null model)  |
-| 1            |  X  |       X         |    X    | all predictors (full model) | 
-| 2            |  X  |       X         |         | SLA and water treatment     |   
-| 3            |  X  |                 |    X    | SLA and species             |    
-| 4            |     |       X         |    X    | water treatment and species |    
-| 5            |  X  |                 |         | SLA                         |    
-| 6            |     |       X         |         | water treatment             |    
-| 7            |     |                 |    X    | species                     |
+| Model number | SLA | Water treatment | Species | Predictor list              |
+|:------------:|:---:|:---------------:|:-------:|-----------------------------|
+|      0       |     |                 |         | no predictors (null model)  |
+|      1       |  X  |        X        |    X    | all predictors (full model) |
+|      2       |  X  |        X        |         | SLA and water treatment     |
+|      3       |  X  |                 |    X    | SLA and species             |
+|      4       |     |        X        |    X    | water treatment and species |
+|      5       |  X  |                 |         | SLA                         |
+|      6       |     |        X        |         | water treatment             |
+|      7       |     |                 |    X    | species                     |
 
 Model fitting
 
@@ -276,7 +274,7 @@ model7 <- lm(total_g ~ species_name,
              data = drought_exp_clean)
 ```
 
-Model selection 
+Model selection
 
 ```{r model-selection}
 AICc(model1,
@@ -290,17 +288,17 @@ AICc(model1,
   # arranging output in descending order of AIC, model with lowest number is the best. 
   arrange(AICc)
 ```
-In this, the model with the lowest integer output is the best fit. We then run model diagnostics to see if the residuals are okay and normally distributed. 
+
+In this, the model with the lowest integer output is the best fit. We then run model diagnostics to see if the residuals are okay and normally distributed.
 
 ```{r model-diagnostics}
 par(mfrow = c(2,2))
 plot(model4) # residuals look ok for best model. 
 ```
-Because the residuals look okay, we moved on here. If not, we would plot the next best model (model 1), etc until we found the actual best fit model. 
 
+Because the residuals look okay, we moved on here. If not, we would plot the next best model (model 1), etc until we found the actual best fit model.
 
 Model selection
-
 
 Look at the model summary:
 
@@ -312,7 +310,7 @@ summary(model4)
 
 **What is the best model?**
 
-The best model that predicts total plant mass (g) includes water treatment and species (F(7, 62) = 27.08, p < 0.001, $\alpha$ = 0.05), but not SLA.  
+The best model that predicts total plant mass (g) includes water treatment and species (F(7, 62) = 27.08, p \< 0.001, $\alpha$ = 0.05), but not SLA.
 
 **How much variation in the response (total mass, in grams) does this model explain?**
 
@@ -320,9 +318,9 @@ This model explained 73% (adjusted R^2^) of the variation in total mass.
 
 **How do we interpret the effects of the predictors on the response variable (again, total mass in grams)?**
 
-On average, plant masses in drought stressed conditions were 0.12 $\pm$ 0.04 g less than plant masses in well watered conditions across species.  
+On average, plant masses in drought stressed conditions were 0.12 $\pm$ 0.04 g less than plant masses in well watered conditions across species.
 
-Across water treatments, all species have different (and higher) masses than _Lotus scoparius_ except _Penstemon centranthifolius_.
+Across water treatments, all species have different (and higher) masses than *Lotus scoparius* except *Penstemon centranthifolius*.
 
 ### 5. Model predictions
 
@@ -336,7 +334,6 @@ model4_predictions <- ggpredict(
   rename(species_name = x,
          water_treatment = group)
 ```
-
 
 ### 6. Final figure
 
@@ -376,8 +373,6 @@ ggplot(data = drought_exp_clean,
   theme(legend.position = "none")
 ```
 
-Data source: Valliere, Justin; Zhang, Jacqueline; Sharifi, M.; Rundel, Philip (2019). Data from: Can we condition native plants to increase drought tolerance and improve restoration success? [Dataset]. Dryad. [https://doi.org/10.5061/dryad.v0861f7](https://doi.org/10.5061/dryad.v0861f7)  
+Data source: Valliere, Justin; Zhang, Jacqueline; Sharifi, M.; Rundel, Philip (2019). Data from: Can we condition native plants to increase drought tolerance and improve restoration success? \[Dataset\]. Dryad. <https://doi.org/10.5061/dryad.v0861f7>
 
-Code: An Bui created the template for this workshop, and Thuy-Tien Bui walked us through each step in class. 
-
-
+Code: An Bui created the template for this workshop, and Thuy-Tien Bui walked us through each step in class.

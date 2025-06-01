@@ -3,4 +3,6 @@ title: "resume"
 format: html
 ---
 
-(include pdf of my updated resume)
+Here is my resume!
+
+\![\](dagan_resume.pdf)
