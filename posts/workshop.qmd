@@ -310,7 +310,7 @@ summary(model4)
 
 **What is the best model?**
 
-The best model that predicts total plant mass (g) includes water treatment and species (F(7, 62) = 27.08, p \< 0.001, $\alpha$ = 0.05), but not SLA.
+The best model that predicts total plant mass (g) includes water treatment and species (F(7, 62) = 27.08, p \< 0.001, $\alpha$ = 0.05), but not specific leaf area.
 
 **How much variation in the response (total mass, in grams) does this model explain?**
 
@@ -338,7 +338,7 @@ model4_predictions <- ggpredict(
 ### 6. Final figure
 
 ```{r final-figure}
-#| fig-width: 12
+#| fig-width: 16
 #| fig-height: 4
 
 # base layer: ggplot
@@ -375,4 +375,4 @@ ggplot(data = drought_exp_clean,
 
 Data source: Valliere, Justin; Zhang, Jacqueline; Sharifi, M.; Rundel, Philip (2019). Data from: Can we condition native plants to increase drought tolerance and improve restoration success? \[Dataset\]. Dryad. <https://doi.org/10.5061/dryad.v0861f7>
 
-Code: An Bui created the template for this workshop, and Thuy-Tien Bui walked us through each step in class.
+Code References: An Bui created the template for this workshop, and Thuy-Tien Bui walked us through each step in class.
