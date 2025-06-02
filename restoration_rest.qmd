@@ -6,23 +6,19 @@ listing:
   sort: "date desc" # can also sort on more than one field
   categories: true # allows you to sort posts by assigned categories 
 ---
+
 ## Here is a map showing Restoration sites and Rest areas
 
-<iframe 
-  width="100%" 
-  height="600" 
-  frameborder="0" 
-  scrolling="no" 
-  allowfullscreen 
-  src="https://ucsb.maps.arcgis.com/apps/instant/basic/index.html?webmap=caf9f14297664734bc232aa3dc1a769f"> </iframe>
+<iframe width="100%" height="600" frameborder="0" scrolling="no" allowfullscreen src="https://ucsb.maps.arcgis.com/apps/instant/basic/index.html?webmap=caf9f14297664734bc232aa3dc1a769f">
 
+</iframe>
 
-**flowers** = sites I work at for CCBER 
+**flowers** = sites I work at for CCBER
 
-From left to right: Ellwood Marine Terminal, Lagoon Island, 2024 Burn Plot, Campus Point, Henley Gate 
+From left to right: Ellwood Marine Terminal, Lagoon Island, 2024 Burn Plot, Campus Point, Henley Gate
 
-**stars** = favorite rest spots near UCSB 
+**stars** = favorite rest spots near UCSB
 
-From left to right: Devereux, Del Playa Park, Window to the Sea Park, Campus Point, Bren Hall deck 
+From left to right: Devereux, Del Playa Park, Window to the Sea Park, Campus Point, Bren Hall deck
 
-## check out more information abour restoration or rest stops below
+## check out more information about restoration or rest stops below
