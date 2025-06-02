@@ -1,0 +1,32 @@
+---
+title: "photos"
+description: "some more pictures I took while in Costa Rica"
+image: bioma_pics/turtlewave.JPEG
+categories: 
+- photos 
+lightbox: true
+---
+
+![we learned how to make traditional coconut bread](bioma_pics/bread.png){group="my-gallery"}
+
+![Crocodiles were lurking in the river](bioma_pics/croc.png){group="my-gallery"}
+
+![bucket of babies!](bioma_pics/bucket.png)
+
+![excavating the unhatched eggs](bioma_pics/egg.png){group="my-gallery"}
+
+![more excavation](bioma_pics/egg2.png){group="my-gallery"}
+
+![some friends :)](bioma_pics/friends.JPEG){group="my-gallery"}
+
+
+![rainy fun](bioma_pics/rain.jpg){group="my-gallery"}
+
+![life size sand turtle](bioma_pics/sand_turtle.JPEG){group="my-gallery"}
+
+![sloth!](bioma_pics/sloth.png){group="my-gallery"}
+
+![hatchlings lined up](bioma_pics/turtleline.png){group="my-gallery"}
+
+![hatchlings exploring](bioma_pics/turtlewave.JPEG){group="my-gallery"}
+

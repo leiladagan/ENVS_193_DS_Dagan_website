@@ -40,6 +40,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-a389595bbda453fb7ef91693894fe34f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -103,7 +106,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../free_page.html"> 
-<span class="menu-text">BIOMA Fieldwork</span></a>
+<span class="menu-text">BIOMA fieldwork experience</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../resume.html"> 
@@ -188,9 +191,9 @@ ul.task-list li input[type="checkbox"] {
 <p>This project has a lot of sky and bush lupines, which have become my favorite flowers! Also lots of planting, weeding, and seed collecting.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><img src="project_images/henley_gate.png" class="img-fluid"></p>
+<p><a href="project_images/henley_gate.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="project_images/henley_gate.png" class="img-fluid"></a></p>
 </div><div class="column" style="width:50%;">
-<p><img src="project_images/lupine.png" class="img-fluid"></p>
+<p><a href="project_images/lupine.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="project_images/lupine.png" class="img-fluid"></a></p>
 </div>
 </div>
 
@@ -616,6 +619,38 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
